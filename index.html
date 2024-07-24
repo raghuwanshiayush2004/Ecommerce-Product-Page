@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">E-Commerce</div>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="cart">
+        <img src="trolley.png"alt="Cart">Cart
+      </div>
+      <div class="profile">
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="product">
+      <div class="product-image">
+        <img src="main.jpg" alt="Product Image" id="main-image">
+        
+        <div class="thumbnail-images">
+          <img src="main1.jpg" alt="Thumbnail 1">
+          <img src="main2.jpg" alt="Thumbnail 2">
+          <img src="main3.jpg" alt="Thumbnail 3">
+          <img src="main4.jpg" alt="Thumbnail 4">
+        </div>
+      </div>
+      <div class="product-details">
+        <h1>E-Commerce Company</h1>
+        <h2>T-shirt for Mens Double Stripes on Chest</h2>
+        <p>Pattern name: Stripes; Sleeve Type: Half Sleeve Wash Care: Machine Wash/ Hand Wash</p>
+        <div class="price">
+          <span class="current-price">$125.00</span>
+          <span class="discount">50%</span>
+          <span class="original-price">$250.00</span>
+        </div>
+        <div class="quantity">
+          <button onclick="decreaseQuantity()">-</button>
+          <input type="text" id="quantity" value="0">
+          <button onclick="increaseQuantity()">+</button>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add to cart</button>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 E-Commerce Company</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
